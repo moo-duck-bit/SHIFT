@@ -1,0 +1,49 @@
+# dependencies / build
+node_modules/
+.expo/
+.expo-shared/
+dist/
+web-build/
+*.tsbuildinfo
+*.log
+
+# Android
+android/build/
+android/app/build/
+android/.gradle/
+android/.cxx/
+android/local.properties
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# iOS
+ios/Pods/
+ios/build/
+*.xcworkspace/xcuserdata/
+
+# secrets — never commit
+.env
+.env.*
+!.env.example
+google-services.json
+GoogleService-Info.plist
+firebase_key.json
+serviceAccountKey.json
+
+# study data — never commit
+data/
+logs/
+screenshots/
+captures/
+*.csv
+firebase-debug.log
+firebase-export-*/
+
+# editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.code-workspace

@@ -1,0 +1,16 @@
+rules_version = '2';
+
+// Firebase Storage 보안 규칙 (임시 테스트용 - 더 관대한 규칙)
+service firebase.storage {
+  match /b/{bucket}/o {
+    // 사용자별 폴더 접근 권한 (더 관대한 규칙)
+    match /users/{userId}/{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // 임시 테스트용 - 모든 인증된 사용자 허용
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+} 

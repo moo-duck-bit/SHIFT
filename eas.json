@@ -1,0 +1,30 @@
+{
+  "build": {
+    "development": {
+      "extends": "production",
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "node": "18.18.0",
+      "autoIncrement": true,
+      "android": {
+        "resourceClass": "medium",
+        "gradleCommand": ":app:assembleRelease",
+        "buildType": "apk"
+      },
+      "ios": {
+        "resourceClass": "medium"
+      }
+    }
+  },
+  "cli": {
+    "appVersionSource": "remote"
+  }
+}
