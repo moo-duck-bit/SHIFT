@@ -7,6 +7,7 @@ generate personalized intervention messages.
 > **SHIFT: LLM-powered If-Then feedback tracker for short-form video self-regulation**
 > Hayeon Yang, Jiheun Hong, Jingyeong Park, Jumin Seo, Hayoung Oh
 > UIST '25 Adjunct · [10.1145/3746058.3758397](https://doi.org/10.1145/3746058.3758397)
+<img width="1088" height="418" alt="shift figure" src="https://github.com/user-attachments/assets/e31d6f19-3cc2-436a-ac1f-d47b4f0b55d1" />
 
 ## How it works
 
